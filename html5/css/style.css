@@ -137,11 +137,14 @@
   overflow: hidden;
 }
 .nav > div li {
-  position: relative;
   float: left;
+  position: relative;
   padding-left: 8px;
   width: 50%;
   box-sizing: border-box;
+}
+.nav > div:last-child li {
+  width: 100%;
 }
 .nav > div li:before {
   content: "";
@@ -153,7 +156,21 @@
   background: #25a2d0;
   border-radius: 50%;
 }
-.nav > div:last-child li {
+.nav > div li a {
+  position: relative;
+}
+.nav > div li a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #25a2d0;
+  transition: all 0.2s ease-out;
+}
+.nav > div li:hover a:after {
   width: 100%;
 }
 
