@@ -721,9 +721,60 @@ body {
   z-index: 1;
 }
 
+/* 사이드 이펙트 3 */
+.side3 {
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+.side3 img {
+  display: block;
+  transition: all 0.3s ease;
+}
+.side3 figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translate(350%, -50%) rotate(180deg);
+  transition: all 0.3s ease;
+}
+.side3 figcaption:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+.side3 figcaption h3 {
+  font-size: 16px;
+}
+.side3 figcaption em {
+  display: block;
+  font-weight: bold;
+}
+.side3:hover img {
+  opacity: 0.4;
+}
+.side3:hover figcaption {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
 /* media query */
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px) {
+  #cont_center {
+    min-height: 1350px;
+  }
   .container {
     width: 100%;
   }
