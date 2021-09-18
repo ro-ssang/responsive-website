@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout6_1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #fff3e0;
+      }
+      #wrap {
+        margin: 0 auto;
+        width: 1200px;
+      }
+      header {
+        height: 100px;
+        background: #ffb74d;
+      }
+      article {
+        height: 300px;
+        background: #ffa726;
+      }
+      section {
+        overflow: hidden;
+        padding: 5%;
+        width: 90%;
+        background: #fdd835;
+      }
+      section > div {
+        float: left;
+        margin: 1%;
+        width: 18%;
+        height: 170px;
+        background: #f57c00;
+        border-radius: 5px;
+      }
+      footer {
+        height: 100px;
+        background: #fb8c00;
+      }
+
+      /* 화면 크기 0 ~ 1200px */
+      @media (max-width: 1220px) {
+        #wrap {
+          width: 100%;
+        }
+        section > div {
+          width: 23%;
+        }
+        section > div:nth-child(5n) {
+          display: none;
+        }
+      }
+      /* 화면 크기 0 ~ 768px */
+      @media (max-width: 768px) {
+        section > div {
+          width: 31.3333%;
+        }
+        section > div:nth-child(5) {
+          display: block;
+        }
+      }
+      /* 화면 크기 0 ~ 480px */
+      @media (max-width: 480px) {
+        section > div {
+          width: 48%;
+        }
+        section > div:nth-child(5n) {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header></header>
+      <article></article>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
