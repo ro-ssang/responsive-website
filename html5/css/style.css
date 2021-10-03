@@ -30,6 +30,39 @@
   color: #ccc;
 }
 
+/* 헤더 타이틀 */
+.header .header_tit {
+  margin-top: 55px;
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header .header_tit h1 {
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: #51b0dc;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.header .header_tit h1:hover {
+  box-shadow: inset 9em 0 0 0 #257fac, inset -9em 0 0 0 #257fac;
+}
+.header .header_tit a {
+  display: inline-block;
+  margin-top: -7px;
+  padding: 10px 20px;
+  background-color: #4a9abf;
+  color: #fff;
+  font-size: 16px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.header .header_tit a:hover {
+  box-shadow: inset 0 0 0 5px rgba(75, 154, 191, 0.9), inset 0 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
 /* 미디어 쿼리 */
 @media (max-width: 1220px) {
   .container {
