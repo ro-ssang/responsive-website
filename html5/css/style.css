@@ -7,6 +7,9 @@
 #nav {
   background: #f6fdff;
 }
+#title {
+  background: #eaf7fd;
+}
 
 /* 컨테이너 */
 .container {
@@ -179,6 +182,34 @@
 }
 .nav > div li:hover a:after {
   width: 100%;
+}
+
+/* 타이틀 */
+.title {
+  position: relative;
+  text-align: center;
+}
+.title h2 {
+  padding: 5px 0;
+  color: #0093bd;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 39px;
+}
+.title .btn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 60px;
+  height: 60px;
+  background: #3192bf;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 35px;
+  line-height: 60px;
+  transition: all 0.3s ease;
+}
+.title .btn:hover {
+  box-shadow: inset 0 0 0 3px rgba(75, 154, 191, 0.9), inset 0 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
 /* 미디어 쿼리 */
