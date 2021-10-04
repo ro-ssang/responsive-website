@@ -26,7 +26,9 @@ select,
 table,
 th,
 tr,
-td {
+td,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
 }
