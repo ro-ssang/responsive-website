@@ -308,6 +308,41 @@ body {
   color: #fff;
 }
 
+/* 게시판1 */
+.notice1 {
+  position: relative;
+}
+.notice1 h5 {
+  padding-bottom: 5px;
+  color: #2f7fa6;
+  font-size: 14px;
+}
+.notice1 li {
+  overflow: hidden;
+  position: relative;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice1 li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 3px;
+  height: 3px;
+  background: #449ce2;
+  border-radius: 50%;
+}
+.notice1 a.more {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #878787;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
 /* 미디어 쿼리 */
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px) {
