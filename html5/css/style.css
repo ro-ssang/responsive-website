@@ -608,6 +608,33 @@ body {
   height: 100%;
 }
 
+/* 푸터 */
+.footer {
+  padding: 30px 50px;
+  text-align: center;
+}
+.footer li {
+  position: relative;
+  display: inline-block;
+  padding: 0 7px 0 10px;
+  white-space: nowrap;
+}
+.footer li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1px;
+  height: 12px;
+  background-color: #dbdbdb;
+}
+.footer li:first-child:before {
+  width: 0;
+}
+.footer address {
+  padding-top: 15px;
+}
+
 /* 미디어 쿼리 */
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px) {
