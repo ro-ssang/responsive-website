@@ -539,6 +539,8 @@ body {
 
 /* 라이트 박스 */
 .square a {
+  overflow: hidden;
+  position: relative;
   float: left;
   margin: 0.5%;
   width: 19%;
@@ -546,6 +548,52 @@ body {
 .square img {
   display: block;
   width: 100%;
+}
+.square em {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.square a:hover em {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.57);
+}
+.square a:nth-child(1):hover img {
+  filter: blur(2px);
+}
+.square a:nth-child(2):hover img {
+  filter: brightness(50%);
+}
+.square a:nth-child(3):hover img {
+  filter: contrast(10%);
+}
+.square a:nth-child(4):hover img {
+  filter: grayscale(100%);
+}
+.square a:nth-child(5):hover img {
+  filter: hue-rotate(120deg);
+}
+.square a:nth-child(6):hover img {
+  filter: invert(100%);
+}
+.square a:nth-child(7):hover img {
+  filter: opacity(10%);
+}
+.square a:nth-child(8):hover img {
+  filter: saturate(10%);
+}
+.square a:nth-child(9):hover img {
+  filter: sepia(120%);
+}
+.square a:nth-child(10):hover img {
+  filter: sepia(120%) hue-rotate(120deg);
 }
 
 /* 미디어 쿼리 */
