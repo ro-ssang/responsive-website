@@ -89,6 +89,20 @@ img {
   width: 100%;
 }
 
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: block;
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
 /* IR 효과 */
 /* 의미있는 이미지의 대체 텍스트를 제공하는 경우. 단, 이미지가 없을 때 대체 텍스트가 보여지지 않음 (Phark Method) */
 .ir_pm {
